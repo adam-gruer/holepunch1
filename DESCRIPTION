@@ -1,0 +1,17 @@
+Type: Compendium
+Package: Raster plot
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.1
+Authors@R: 
+    person(given = "Adam",
+           family = "Gruer",
+           role = c("aut", "cre"),
+           email = "adamgruer@icloud.com")
+Description: Demo of creating a raster plot
+License: MIT + file LICENSE
+Depends: 
+    knitr,
+    rmarkdown,
+    tidyverse
+Encoding: UTF-8
+LazyData: true

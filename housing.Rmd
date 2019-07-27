@@ -1,0 +1,27 @@
+---
+title: "rasteplot"
+author: "Adam Gruer"
+date: "27/07/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r libraries}
+library(tidyverse)
+```
+
+A raster plot
+```{r}
+txhousing <- txhousing
+txhousing %>% 
+  mutate_at(vars(year,month), factor) %>% 
+  group_by(month, year) %>% 
+  summarise(sales = sum(sales, na.rm = TRUE)) %>% 
+ggplot( aes(month, year, fill = sales)) +
+  geom_tile()
+```
+
+
