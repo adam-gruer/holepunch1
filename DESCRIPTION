@@ -12,6 +12,8 @@ License: MIT + file LICENSE
 Depends: 
     knitr,
     rmarkdown,
-    tidyverse
+    tidyverse,
+    naniar
 Encoding: UTF-8
 LazyData: true
+
